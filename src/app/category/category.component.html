@@ -1,0 +1,96 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-right">
+                    <!-- <button mat-raised-button class="btn btn-primary">Primary</button> -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Launch demo modal
+                    </button>
+                </div>
+
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Simple Table</h4>
+                        <p class="card-category"> Here is a subtitle for this table</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                    <th>
+                                        ID
+                                    </th>
+                                    <th>
+                                        Name
+                                    </th>
+                                    <th>
+                                        Country
+                                    </th>
+                                    <th>
+                                        City
+                                    </th>
+                                </thead>
+                                <tbody *ngFor="let cat of listCategories">
+                                    <tr>
+                                        <td>{{cat.name}}</td>
+                                        <td>{{cat.username}}</td>
+                                        <td>{{cat.email}}</td>
+                                        <td>{{cat.phone}}</td>
+                                        <td>
+                                            <button mat-raised-button (click)="openModel()"
+                                                class="btn btn-success btn-sm"><span class="material-icons">
+                                                    edit
+                                                </span>
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button mat-raised-button (click)="openModel()"
+                                                class="btn btn-danger btn-sm"><span class="material-icons">
+                                                    delete_forever
+                                                </span></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Example label</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Another label</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                    </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
