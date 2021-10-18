@@ -11,6 +11,7 @@ export class DiscountComponent implements OnInit {
 
   
   ngOnInit() {
+    $('#example').DataTable();
     this.discountService.listDiscount().subscribe(data=>{
       this.listDiscount = data;
     })

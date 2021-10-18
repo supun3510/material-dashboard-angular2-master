@@ -8,27 +8,33 @@ import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
-
+import {  CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import {
   AgmCoreModule
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-
+import { DataTablesModule } from 'angular-datatables';
+import {MatTableModule} from '@angular/material/table';
 @NgModule({
   imports: [
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    DataTablesModule,
     ComponentsModule,
     RouterModule,
+    MatTableModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
     })
+  ],schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ],
+  
   declarations: [
     AppComponent,
     AdminLayoutComponent,

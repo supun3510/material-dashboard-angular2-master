@@ -10,6 +10,7 @@ export class ProductionComponent implements OnInit {
   constructor(private productionService:ProductionService ) { }
 
   ngOnInit() {
+    
     this.productionService.listProduction().subscribe(data=>{
       this.listProduction = data;
       console.log(data);

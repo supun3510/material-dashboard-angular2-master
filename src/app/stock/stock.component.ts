@@ -10,6 +10,7 @@ export class StockComponent implements OnInit {
   constructor(private stockService:StockService ) { }
 
   ngOnInit() {
+    $('#example').DataTable();
     this.stockService.listStock().subscribe(data=>{
       this.listStock = data;
       console.log(data);

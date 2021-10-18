@@ -10,6 +10,7 @@ export class BrandComponent implements OnInit {
   constructor(private brand: BrandService ) { }
 
   ngOnInit() {
+    $('#example').DataTable();
     this.brand.listBrand().subscribe(data=>{
       this.listBrand = data;
     })

@@ -8,6 +8,7 @@ import { ProductComponent } from 'app/Product/product.component';
 import { DiscountComponent } from 'app/discount/discount.component';
 import { StockComponent } from 'app/stock/stock.component';
 import { ProductionComponent } from 'app/production/production.component';
+import { MonthlySummaryComponent } from 'app/monthlySummary/monthlySummary.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -59,5 +60,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'product',     component: ProductComponent },
     { path: 'discount',     component: DiscountComponent },
     { path: 'stock',     component: StockComponent },
-    { path: 'production',     component: ProductionComponent }
+    { path: 'production',     component: ProductionComponent },
+    { path: 'monthlySummary',     component: MonthlySummaryComponent }
 ];

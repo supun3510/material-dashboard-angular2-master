@@ -21,7 +21,9 @@
               "src/favicon.ico"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
+              "node_modules/datatables.net-dt/css/jquery.dataTables.css",
               "src/assets/scss/material-dashboard.scss",
               "src/assets/css/demo.css"
             ],
@@ -30,6 +32,8 @@
               "node_modules/popper.js/dist/umd/popper.js",
               "node_modules/bootstrap-material-design/dist/js/bootstrap-material-design.min.js",
               "node_modules/arrive/src/arrive.js",
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/datatables.net/js/jquery.dataTables.js",
               "node_modules/moment/moment.js",
               "node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js",
               "node_modules/bootstrap-notify/bootstrap-notify.js",
@@ -118,6 +122,7 @@
               "node_modules/chartist/dist/chartist.js"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
               "src/assets/scss/material-dashboard.scss",
               "src/assets/css/demo.css"

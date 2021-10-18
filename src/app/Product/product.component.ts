@@ -11,6 +11,7 @@ export class ProductComponent implements OnInit {
 
   
   ngOnInit() {
+    $('#example').DataTable();
     this.productService.listProduct().subscribe(data=>{
       this.listProduct = data;
     })
