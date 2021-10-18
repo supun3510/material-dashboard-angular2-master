@@ -6,10 +6,10 @@ import { Injectable } from '@angular/core';
 })
 export class CategoryService {
 
-  baseUrl:string='https://jsonplaceholder.cypress.io/'
+  baseUrl:string='http://supunsam-001-site1.btempurl.com/api/Category/'
   constructor(private http:HttpClient) { }
 
   listCategories(){
-    return this.http.get(this.baseUrl+'users')
+    return this.http.get(this.baseUrl+'GetCategories')
   }
 }
